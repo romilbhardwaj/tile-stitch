@@ -5,7 +5,7 @@ Stitch together and crop map tiles for any bounding box.
 
 The tiles should come from a web map service in PNG or JPEG format, and will be written out as PNG or a georeferenced TIFF.
 
-Optionally, a separate worldfile with georeferencing data can be written.
+Optionally, a separate worldfile with georeferencing data can be written. 
 
 Examples
 --------

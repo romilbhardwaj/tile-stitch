@@ -9,7 +9,7 @@ CURL_LIBS := $(shell pkg-config --libs libcurl) -lcurl
 PNG_LIBS := $(shell pkg-config --libs libpng)
 
 stitch: stitch.c
-	$(CC) -g -Wall -O3 $(CFLAGS) $(LDFLAGS) -o stitch stitch.c $(CURL_CFLAGS) $(PNG_CFLAGS) $(JPEG_CFLAGS) $(CURL_LIBS) $(PNG_LIBS) $(JPEG_LIBS) -ljpeg -lm -lgeotiff -ltiff
+	$(CC) -g -Wall -O3 $(CFLAGS) $(LDFLAGS) -o stitch stitch.c $(CURL_CFLAGS) $(PNG_CFLAGS) $(JPEG_CFLAGS) $(CURL_LIBS) $(PNG_LIBS) $(JPEG_LIBS) -ljpeg -lm -lgeotiff -ltiff -I /usr/include/geotiff
 
 clean:
 	rm -f stitch
